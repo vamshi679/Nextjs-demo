@@ -2,7 +2,7 @@
 "use server";
 import React from "react";
 
-export default function InsurancePage() {
+export default async function InsurancePage() {
   return (
     <html>
       <head>
