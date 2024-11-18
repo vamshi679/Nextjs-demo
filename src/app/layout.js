@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import  "bootstrap/dist/css/bootstrap.min.css"
 import AddBootstrap from "./AddBootstrap";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistPoppins.variable}`}>
         {/* <AddBootstrap/> */}
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
